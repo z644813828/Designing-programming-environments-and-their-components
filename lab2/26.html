@@ -1,0 +1,29 @@
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+</head>
+
+<body>
+
+  <script>
+  function getfbn(n)
+  {
+    if( n<1 )
+      return 0;
+    if( n==1 || n==2 )
+      return 1;
+    return getfbn(n-2)+getfbn(n-1);
+  }
+  
+  alert( getfbn(7) );
+
+  </script>
+
+</body>
+
+</html>
+------------------------------------
